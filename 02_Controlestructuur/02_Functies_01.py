@@ -1,5 +1,6 @@
 #oef1
-def printWelkom(naam):
-    print("Welkom, " + naam + " in NMCT")
-printWelkom("Johan")
-printWelkom("My dear")
+def printWelkom(naam,groep):
+    print("Welkom, " + naam + " in " + groep +".")
+naam = input("Geef uw naam op: ")
+groep = input("Geef uw schoolgroep op: ")
+printWelkom(naam,groep)

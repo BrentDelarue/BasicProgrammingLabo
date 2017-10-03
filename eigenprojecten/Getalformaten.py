@@ -2,11 +2,11 @@
 type1 = input("Geef hier het te vertalen getalformaat in: ")
 type2 = input("Geef hier het te bekomen getalformaat in: ")
 getal = float(input("Geef hier het te vertalen getal in: "))
-if type1 != ("Binair", "binair", "octaal", "Octaal", "Decimaal", "decimaal", "Hexadecimaal", "hexadecimaal"):
+if type1 == ("Binair", "binair", "octaal", "Octaal", "Decimaal", "decimaal", "Hexadecimaal", "hexadecimaal"):
     print("Het eerste opgegeven getalformaat wordt niet ondersteund.")
-elif type2 != ["Binair", "binair", "octaal", "Octaal", "Decimaal", "decimaal", "Hexadecimaal", "hexadecimaal"]:
+if type2 == ("Binair", "binair", "octaal", "Octaal", "Decimaal", "decimaal", "Hexadecimaal", "hexadecimaal"):
     print("Het tweede opgegeven getalformaat wordt niet ondersteund.")
-elif type1 == type2:
+if type1 == type2:
     print("De opgegeven getalformaten zijn identiek.")
 else:
     if type1 == ["Binair", "binair"]:
